@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #6a0dad;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo img {
+  height: 25px;
+  width: 25px;
+}
+.logo h1 {
+  font-size: 24px;
+  display: inline;
+  margin-left: 10px;
+ 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #4b047a;
+}
+
+.hero {
+  background-image: url('background-image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00bcd4; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0097a7; 
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: 220px;
+}
+
+.service img {
+  width: 200px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+.service-content {
+  color: black;
+}
+
+.service-content h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.service-content h2{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9800; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #f57c00; 
+}
+
+.faq-section {
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #b8b1f0; 
+}
+
+.faq-section h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  color: #6a5acd; 
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #333; 
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #a43bef;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.content {
+  margin-top: 20px;
+  flex: 1;
+  
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  line-height: 1.6em;
+}
+
+.column h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.9em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  background-color: #483d8b; 
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .logo h1 {
+    margin-left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .menu-toggle span {
+    background-color: #fff;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #6a0dad;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .service img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
